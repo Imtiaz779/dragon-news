@@ -18,7 +18,7 @@ const Router = createBrowserRouter([
                 element: <CategoryNews/>,
                 loader: ({ params }) => {
                     return fetch(`https://openapi.programming-hero.com/api/news/category/${params.id}`)
-                      .then(res => res.json());
+                     
                   }
                
               },
